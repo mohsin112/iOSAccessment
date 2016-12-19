@@ -22,9 +22,12 @@ class ViewController: UIViewController {
     @IBOutlet var spanishMeaningLb: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        let jsonArray = HelperClass.parselocalJson()
+        HelperClass.wordsArray = jsonArray
         chooseNewWord()
         populateLabels()
         startAnimationOfWords()
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     private func populateLabels()
@@ -36,23 +39,23 @@ class ViewController: UIViewController {
     
     private func chooseNewWord()
     {
-        let jsonArray = HelperClass.parselocalJson()
+        let jsonArray = HelperClass.wordsArray
         randomSelectedWords = HelperClass.getRandomNumbers(from: jsonArray, count: 4)
         correctWord = randomSelectedWords[0]
         self.englishWord.text = correctWord?.englishWord
     }
-    private func startAnimationOfWords()
+    func startAnimationOfWords()
     {
         let nowShowing = HelperClass.getRandomNumber(between: randomSelectedWords.count)
         self.spanishMeaningLb.text = randomSelectedWords[nowShowing].spanishWord
-        self.spanishMeaningLb.center = CGPoint(x: self.spanishMeaningLb.center.x, y: -1 * self.spanishMeaningLb.frame.size.height)
+        self.spanishMeaningLb.center = CGPoint(x: self.spanishMeaningLb.center.x, y: -80)
         scored = false
-        UIView.animate(withDuration: 5, animations: {
-            self.spanishMeaningLb.center = CGPoint(x: self.spanishMeaningLb.center.x, y: UIScreen.main.bounds.height + 80)
+        UIView.animate(withDuration: 4, animations: {
+            self.spanishMeaningLb.center = CGPoint(x: self.spanishMeaningLb.center.x, y: UIScreen.main.bounds.height)
         }) { (comp) in
             if self.scored == false
             {
-                self.startAnimationOfWords()
+                self.perform(Selector("startAnimationOfWords"), with: nil, afterDelay: 0.1)
             }
         }
     }
@@ -74,7 +77,7 @@ class ViewController: UIViewController {
         if correctWord?.spanishWord == self.spanishMeaningLb.text
         {
             correctWordInARowInt += 1
-            if(correctWordInARowInt > 4)
+            if(correctWordInARowInt >= 4)
             {
                 //You Win
                 self.performSegue(withIdentifier: "gameOver", sender: "Hurray! You Won!")
@@ -84,6 +87,7 @@ class ViewController: UIViewController {
         else
         {
             turnNo += 1
+            correctWordInARowInt = 0
             if(turnNo > 3)
             {
                 self.performSegue(withIdentifier: "gameOver", sender: "You Lost")

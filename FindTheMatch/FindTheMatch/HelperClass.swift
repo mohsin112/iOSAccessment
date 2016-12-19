@@ -10,6 +10,7 @@ import UIKit
 
 class HelperClass
 {
+    static var wordsArray:[WordEqualModel] = [WordEqualModel]()
     static func parselocalJson() -> [WordEqualModel]
     {
         var wordModels = [WordEqualModel]()
@@ -36,8 +37,6 @@ class HelperClass
             //do nothing
             print(error)
         }
-        
-        
         return wordModels
         
     }
