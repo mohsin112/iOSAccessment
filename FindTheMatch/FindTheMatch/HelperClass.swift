@@ -54,5 +54,10 @@ class HelperClass
         }
         return resultArray
     }
+    
+    static func getRandomNumber(between zeroTo:Int) -> Int
+    {
+        return Int(arc4random_uniform(UInt32(zeroTo)))
+    }
 
 }
