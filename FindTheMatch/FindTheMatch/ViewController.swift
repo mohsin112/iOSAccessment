@@ -35,6 +35,14 @@ class ViewController: UIViewController {
         self.englishWord.text = correctWord?.englishWord
         turnNumber.text = "\(turnNo)"
         correctWordInARow.text = "\(correctWordInARowInt)"
+        
+        //blink animation
+        self.englishWord.alpha = 0.1
+        self.englishWord.textColor = UIColor.green
+        UIView.animate(withDuration: 01) {
+            self.englishWord.alpha = 1
+            self.englishWord.textColor = UIColor.black
+        }
     }
     
     private func chooseNewWord()

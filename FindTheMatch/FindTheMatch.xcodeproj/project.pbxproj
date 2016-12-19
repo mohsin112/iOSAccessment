@@ -18,7 +18,6 @@
 		294490A71E08691500965ACC /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294490A61E08691500965ACC /* HelperClass.swift */; };
 		294490A91E086E6F00965ACC /* GameOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294490A81E086E6F00965ACC /* GameOverController.swift */; };
 		6BA5870B0B32E5ECCD287624 /* Pods_FindTheMatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E3DE987A99052647EE4E2A /* Pods_FindTheMatchTests.framework */; };
-		C8CFA3742828D523B067390B /* Pods_FindTheMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD123DA28D9DD1290A0843B /* Pods_FindTheMatch.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +54,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2909D49E1E07981000548D8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8CFA3742828D523B067390B /* Pods_FindTheMatch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2909D4B21E07981100548D8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,12 +138,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2909D4BE1E07981100548D8A /* Build configuration list for PBXNativeTarget "FindTheMatch" */;
 			buildPhases = (
-				3F9DC0616F99E1F06F1736A2 /* [CP] Check Pods Manifest.lock */,
 				2909D49D1E07981000548D8A /* Sources */,
-				2909D49E1E07981000548D8A /* Frameworks */,
 				2909D49F1E07981000548D8A /* Resources */,
-				DC388C4E6AA3C597E2E38A0D /* [CP] Embed Pods Frameworks */,
-				51FCC87F8B4390DB06AD92EC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,21 +248,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindTheMatchTests/Pods-FindTheMatchTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3F9DC0616F99E1F06F1736A2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		4A9C867642BD0B9F3F59972E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,21 +263,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		51FCC87F8B4390DB06AD92EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindTheMatch/Pods-FindTheMatch-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BA5A8C908EAD364B010C4DB0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -319,21 +276,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindTheMatchTests/Pods-FindTheMatchTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DC388C4E6AA3C597E2E38A0D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindTheMatch/Pods-FindTheMatch-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
