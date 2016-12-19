@@ -15,6 +15,7 @@
 		2909D4BA1E07981100548D8A /* FindTheMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909D4B91E07981100548D8A /* FindTheMatchTests.swift */; };
 		2909D4C51E079DF000548D8A /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 2909D4C41E079DF000548D8A /* words.json */; };
 		2909D4C71E07A1CF00548D8A /* WordEqualModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909D4C61E07A1CF00548D8A /* WordEqualModel.swift */; };
+		294490A71E08691500965ACC /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294490A61E08691500965ACC /* HelperClass.swift */; };
 		6BA5870B0B32E5ECCD287624 /* Pods_FindTheMatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E3DE987A99052647EE4E2A /* Pods_FindTheMatchTests.framework */; };
 		C8CFA3742828D523B067390B /* Pods_FindTheMatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD123DA28D9DD1290A0843B /* Pods_FindTheMatch.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		2909D4BB1E07981100548D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2909D4C41E079DF000548D8A /* words.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
 		2909D4C61E07A1CF00548D8A /* WordEqualModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordEqualModel.swift; sourceTree = "<group>"; };
+		294490A61E08691500965ACC /* HelperClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperClass.swift; sourceTree = "<group>"; };
 		A33F7B3EA399787DE1745F3C /* Pods-FindTheMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindTheMatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindTheMatch/Pods-FindTheMatch.debug.xcconfig"; sourceTree = "<group>"; };
 		AB32BE0215A39B3D19FC7BB2 /* Pods-FindTheMatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindTheMatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FindTheMatchTests/Pods-FindTheMatchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ACD123DA28D9DD1290A0843B /* Pods_FindTheMatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindTheMatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 				2909D4AD1E07981100548D8A /* LaunchScreen.storyboard */,
 				2909D4B01E07981100548D8A /* Info.plist */,
 				2909D4C61E07A1CF00548D8A /* WordEqualModel.swift */,
+				294490A61E08691500965ACC /* HelperClass.swift */,
 			);
 			path = FindTheMatch;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			files = (
 				2909D4A71E07981100548D8A /* ViewController.swift in Sources */,
 				2909D4A51E07981100548D8A /* AppDelegate.swift in Sources */,
+				294490A71E08691500965ACC /* HelperClass.swift in Sources */,
 				2909D4C71E07A1CF00548D8A /* WordEqualModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
