@@ -1,0 +1,6 @@
+framework module Pods_FindTheMatchTests {
+  umbrella header "Pods-FindTheMatchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
