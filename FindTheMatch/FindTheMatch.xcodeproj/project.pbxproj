@@ -17,7 +17,6 @@
 		2909D4C71E07A1CF00548D8A /* WordEqualModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2909D4C61E07A1CF00548D8A /* WordEqualModel.swift */; };
 		294490A71E08691500965ACC /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294490A61E08691500965ACC /* HelperClass.swift */; };
 		294490A91E086E6F00965ACC /* GameOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294490A81E086E6F00965ACC /* GameOverController.swift */; };
-		6BA5870B0B32E5ECCD287624 /* Pods_FindTheMatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E3DE987A99052647EE4E2A /* Pods_FindTheMatchTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,17 +51,6 @@
 		CF194829F0D53F66CEFD05A7 /* Pods-FindTheMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindTheMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-FindTheMatch/Pods-FindTheMatch.release.xcconfig"; sourceTree = "<group>"; };
 		D8E3DE987A99052647EE4E2A /* Pods_FindTheMatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindTheMatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		2909D4B21E07981100548D8A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6BA5870B0B32E5ECCD287624 /* Pods_FindTheMatchTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2909D4981E07981000548D8A = {
@@ -154,12 +142,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2909D4C11E07981100548D8A /* Build configuration list for PBXNativeTarget "FindTheMatchTests" */;
 			buildPhases = (
-				4A9C867642BD0B9F3F59972E /* [CP] Check Pods Manifest.lock */,
 				2909D4B11E07981100548D8A /* Sources */,
-				2909D4B21E07981100548D8A /* Frameworks */,
 				2909D4B31E07981100548D8A /* Resources */,
-				10D41CFF2433B4795A616E63 /* [CP] Embed Pods Frameworks */,
-				BA5A8C908EAD364B010C4DB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,54 +215,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		10D41CFF2433B4795A616E63 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindTheMatchTests/Pods-FindTheMatchTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4A9C867642BD0B9F3F59972E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BA5A8C908EAD364B010C4DB0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FindTheMatchTests/Pods-FindTheMatchTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2909D49D1E07981000548D8A /* Sources */ = {

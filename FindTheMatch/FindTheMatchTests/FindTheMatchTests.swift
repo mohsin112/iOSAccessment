@@ -26,6 +26,25 @@ class FindTheMatchTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    func testlistLoad()
+    {
+        let jsonArray = HelperClass.parselocalJson()
+        guard jsonArray.count > 0 else
+        {
+            assert(false)
+        }
+    }
+    
+    func testRandomGet()
+    {
+        let jsonArray = HelperClass.parselocalJson()
+        let randomSelectedWords = HelperClass.getRandomNumbers(from: jsonArray, count: 4)
+        guard randomSelectedWords.count > 0 else
+        {
+            assert(false)
+        }
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
