@@ -58,12 +58,17 @@ class ViewController: UIViewController {
         self.spanishMeaningLb.text = randomSelectedWords[nowShowing].spanishWord
         self.spanishMeaningLb.center = CGPoint(x: self.spanishMeaningLb.center.x, y: -80)
         scored = false
+        self.spanishMeaningLb.textColor = UIColor.black
         UIView.animate(withDuration: 4, animations: {
             self.spanishMeaningLb.center = CGPoint(x: self.spanishMeaningLb.center.x, y: UIScreen.main.bounds.height)
         }) { (comp) in
             if self.scored == false
             {
-                self.perform(Selector("startAnimationOfWords"), with: nil, afterDelay: 0.1)
+                self.perform(#selector(ViewController.startAnimationOfWords), with: nil, afterDelay: 0.1)
+            }
+            else
+            {
+                self.calculateScore()
             }
         }
     }
@@ -74,8 +79,22 @@ class ViewController: UIViewController {
         let point = touch?.location(in: self.view)
         if ((self.spanishMeaningLb.layer.presentation()!.hitTest(point!)) != nil)
         {
-            scored = true
-            calculateScore()
+            if(scored == false)
+            {
+                scored = true
+                
+                DispatchQueue.main.async {
+                    if self.correctWord?.spanishWord == self.spanishMeaningLb.text
+                    {
+                        self.spanishMeaningLb.textColor = UIColor.green
+                    }
+                    else
+                    {
+                        self.spanishMeaningLb.textColor = UIColor.red
+                    }
+                }
+               
+            }
         }
     }
     
